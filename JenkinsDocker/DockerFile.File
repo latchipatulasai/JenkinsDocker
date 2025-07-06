@@ -1,0 +1,11 @@
+# Use Maven with Java 17
+FROM maven:3.9.4-eclipse-temurin-17 AS build
+
+# Set working directory inside the container
+WORKDIR /app
+
+# Copy all files from your project into the container
+COPY . .
+
+# Build the project and run the tests
+RUN mvn clean test
