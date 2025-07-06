@@ -42,6 +42,8 @@ public class GoogleSearchTest {
 		driver.findElement(By.name("q")).sendKeys("sailatchipatula", Keys.ENTER);
 		test.pass("Search completed");
 		Thread.sleep(5000);
+		
+		
 	}
 
 	@AfterMethod
